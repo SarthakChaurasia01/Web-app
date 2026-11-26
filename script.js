@@ -60,13 +60,11 @@ let share = Math.floor(e.amount / e.splitAmong.length);
 let extra = e.amount % e.splitAmong.length;
 e.splitAmong.forEach((m, i) => {
 balance[m].share += share + (i < extra ? 1 : 0);
-});
-});
+});});
 members.forEach(m => {
 balance[m].net = balance[m].paid - balance[m].share;
 });
-return balance;
-}
+return balance;}
 function show() {
 let list = document.getElementById("memberList");
 let payer = document.getElementById("paidBy");
