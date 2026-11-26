@@ -1,0 +1,141 @@
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 25px;
+    color: #2c3e50;
+}
+
+h1 {
+    text-align: center;
+    color: #2563eb;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #1e293b;
+    font-size: 20px;
+    margin-top: 30px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 10px;
+}
+
+input, select {
+    padding: 10px 12px;
+    margin: 6px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #ffffff;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+button {
+    background-color: #93e60e;
+    color: #ffffff;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+ul {
+    padding-left: 24px;
+}
+
+li {
+    margin: 10px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    margin-top: 15px;
+}
+
+th {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+th, td {
+    padding: 12px 14px;
+    text-align: left;
+    border: 1px solid #e2e8f0;
+}
+
+tr:nth-child(even) {
+    background-color: #2d4761;
+}
+
+#expenseList div {
+    background-color: #8b8282;
+    padding: 14px 16px;
+    margin: 12px 0;
+    border: 1px solid #a7aaad;
+    border-radius: 6px;
+}
+
+#settleList {
+    background-color: #dd6363;
+    padding: 12px 14px;
+    border-radius: 6px;
+    border: 1px solid #639eec;
+}
+
+#memberError, #expenseError {
+    color: #dc2626;
+    font-size: 14px;
+}
+
+#splitMembers {
+    margin: 10px 6px;
+}
+
+#splitMembers label {
+    margin-right: 16px;
+}
+
+#expenseList button {
+    background-color: #c7047c;
+}
+
+#expenseList button:hover {
+    background-color: #9df004;
+}
+
+button:last-child {
+    margin-top: 15px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 14px;
+    }
+
+    input, select {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 6px 0;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}

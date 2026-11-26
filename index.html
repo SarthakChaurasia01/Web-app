@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Expense Splitter</title>
+  <link rel="stylesheet" href="style.css">
+ </head>
+   <body>
+   <h1>Expense Splitter</h1>
+<h2>Add Members</h2>
+ <input type="text" id="member_name" placeholder="Enter member name">
+    <button onclick="addMember()">Add Member</button>
+<p id="memberError"></p>
+<ul id="memberList"></ul>
+<h2>Balances</h2>
+<table border="1">
+    
+<thead>
+<tr>
+    <th>Member </th>
+ <th> Paid</th>
+  <th>Share</th>
+<th>Net Balance</th>
+ </tr>
+ </thead>
+ <tbody id="balanceList"></tbody>
+</table>
+<h2>Add Expense</h2>
+   <input type="text" id="expenseTitle" placeholder="Expense title">
+  <input type="number" id="expense_amount" placeholder="Amount">
+<label>Paid By:</label>
+<select id="paidBy">
+<option value="">Select Member</option>
+</select>
+  <p>Split Among:</p>
+<div id="splitMembers"></div>
+<button onclick="addExpense()">Add Expense</button>
+ <p id="expenseError"></p>
+ <h2>All Expenses</h2>
+<div id="expenseList"></div>
+  <h2>Settle Up</h2>
+<div id="settleList"></div>
+  <button onclick="resetGroup()">Reset Group</button>
+ <script src="script.js"></script>
+</body>
+</html>
