@@ -51,8 +51,7 @@ expenses = expenses.filter(e => e.id !== id);
 save();
 show();
 }
-function calculate() {
-let balance = {};
+function calculate() {let balance = {};
 members.forEach(m => balance[m] = { paid: 0, share: 0, net: 0 });
 expenses.forEach(e => {
 balance[e.paidBy].paid += e.amount;
@@ -62,8 +61,7 @@ e.splitAmong.forEach((m, i) => {
 balance[m].share += share + (i < extra ? 1 : 0);
 });});
 members.forEach(m => {
-balance[m].net = balance[m].paid - balance[m].share;
-});
+balance[m].net = balance[m].paid - balance[m].share;});
 return balance;}
 function show() {
 let list = document.getElementById("memberList");
