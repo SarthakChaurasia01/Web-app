@@ -9,8 +9,7 @@ let name = document.getElementById("member_name").value.trim();
 if (!name || members.length >= 10 || members.some(m => m.toLowerCase() === name.toLowerCase())) {
 document.getElementById("memberError").innerText = "Invalid or duplicate name (maximum 10 members)";
 return;
-}
-members.push(name);
+}members.push(name);
 document.getElementById("member_name").value = "";
 save();
 show();
